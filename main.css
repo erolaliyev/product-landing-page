@@ -1,12 +1,21 @@
 /* Add a message for browsers that don't support CSS Grid */
 /* Use at least one media query & use flexbox at least once to pass fCC test suite*/
-* {
-  border: 1px red solid;
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 header {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    padding-top: 10px;
+    border: 1px solid red;
+    align-items: center;
+}
+
+header > *, header * {
+  border: 1px red solid;
 }
 
 img {
@@ -25,7 +34,8 @@ nav > ul {
   grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
   justify-items: center;
-  /* margin: 0; */
+  align-items: center;
+  margin: 0;
   padding: 0;
 }
 
