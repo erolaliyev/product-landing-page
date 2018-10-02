@@ -15,12 +15,7 @@ header {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     padding-top: 10px;
-    border: 1px solid red;
     align-items: center;
-}
-
-header > *, header * {
-  border: 1px red solid;
 }
 
 img {
@@ -48,4 +43,22 @@ nav > ul {
   cursor: pointer;
   text-decoration: none;
   color: #000;
+}
+
+#getStartedDiv {
+  display: grid;
+  grid-template-rows: 1fr 1f  r;
+  border: 1px red solid;
+  justify-items: center;
+}
+
+#form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* justify-items: center; */
+}
+
+input {
+  margin: .5rem 0;
+  /* border: none; */
 }
