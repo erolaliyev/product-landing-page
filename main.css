@@ -1,11 +1,31 @@
-/* Placeholder */
-
-#container {
-  display: flex;
+/* Add a message for browsers that don't support CSS Grid */
+/* Use at least one media query & use flexbox at least once to pass fCC test suite*/
+* {
+  border: 1px red solid;
 }
 
-@media (max-width: 500px) {
+header {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 125%;
+}
+
   nav {
-    border: 1px solid firebrick;
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+nav > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+  justify-items: center;
+  /* margin: 0; */
+  padding: 0;
   }
 }
