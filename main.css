@@ -1,7 +1,12 @@
 /* Add a message for browsers that don't support CSS Grid */
 /* Use at least one media query & use flexbox at least once to pass fCC test suite*/
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 1.6rem;
   margin: 0;
   padding: 0;
 }
