@@ -45,20 +45,28 @@ nav > ul {
   color: #000;
 }
 
+#getStartedDiv, #getStartedDiv * {
+  border: 1px solid red;
+}
+
 #getStartedDiv {
   display: grid;
-  grid-template-rows: 1fr 1f  r;
-  border: 1px red solid;
+  grid-template-rows: 1fr 1fr;
   justify-items: center;
+  align-items: center;
+}
+
+#getStartedDiv > p {
+  font-weight: bold;
+  font-size: 2.4rem;
 }
 
 #form {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  /* justify-items: center; */
+  /* align-items: center; */
 }
 
-input {
+#email, #submit {
   margin: .5rem 0;
-  /* border: none; */
 }
