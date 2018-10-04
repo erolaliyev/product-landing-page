@@ -64,9 +64,11 @@ nav > ul {
 #form {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  /* align-items: center; */
+  width: 20%;
 }
 
-#email, #submit {
-  margin: .5rem 0;
+#email {
+  padding: .3rem;
+  margin-bottom: 1rem;
+}
 }
