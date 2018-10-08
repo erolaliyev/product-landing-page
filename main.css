@@ -93,3 +93,44 @@ nav > ul {
 #submit:hover {
   background-color: #FF9000;
 }
+
+#features, #features * {
+  border: 1px solid magenta;
+}
+
+#features {
+  display: grid;
+  width: 100%;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 20% 80%; 
+  width: 60%;
+  justify-self: center;
+  /* padding: 0; */
+}
+
+i {
+  justify-self: center;
+  align-self: center;
+}
+
+.featureHeader {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.featureText {
+  margin: 0;
+  /* background-color: red;  */
+}
+
+.featureExplanation {
+  /* display: inline-block; */
+  padding: 0;
+  display: grid;
+  grid-template-rows: 10% 40% 40% 10%;
+  align-items: center;
+}
