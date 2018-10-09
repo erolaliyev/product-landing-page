@@ -94,10 +94,6 @@ nav > ul {
   background-color: #FF9000;
 }
 
-#features, #features * {
-  border: 1px solid magenta;
-}
-
 #features {
   display: grid;
   width: 100%;
@@ -106,31 +102,30 @@ nav > ul {
 .feature {
   display: grid;
   grid-template-columns: 20% 80%; 
-  width: 60%;
+  width: 70%;
   justify-self: center;
-  /* padding: 0; */
+  margin-bottom: 5rem;
 }
 
 i {
   justify-self: center;
   align-self: center;
+  color: #FF9000;
 }
 
 .featureHeader {
   font-weight: bold;
   font-size: 2.4rem;
   margin: 0;
+  align-self: center;
 }
 
 .featureText {
   margin: 0;
-  /* background-color: red;  */
+  align-self: start;
 }
 
 .featureExplanation {
-  /* display: inline-block; */
-  padding: 0;
   display: grid;
-  grid-template-rows: 10% 40% 40% 10%;
-  align-items: center;
+  grid-template-rows: 50% 50%;
 }
