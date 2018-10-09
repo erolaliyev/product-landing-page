@@ -129,3 +129,8 @@ i {
   display: grid;
   grid-template-rows: 50% 50%;
 }
+
+#how-it-works {
+  display: grid;
+  justify-items: center;
+}
