@@ -135,4 +135,47 @@ i {
   justify-items: center;
   margin: 3rem 0;
 }
+
+#pricing, #pricing * {
+  border: 1px solid aqua;
+}
+
+#pricing {
+  height: 40rem;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, 10rem);
+  grid-column-gap: 3rem;
+  background-color: magenta;
+}
+
+.tenor {
+  grid-column: 3 / 5;
+}
+
+.bass {
+  grid-column: 5 / 7;
+}
+
+.valve {
+  grid-column: 7 / 9;
+}
+
+.pricingOption {
+  /* grid-row: 1 / 7; */
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.pricingOptionName {
+  background-color: green;
+  grid-column: 1 / 11;
+  grid-row: 1 / 3;
+  margin: 0;
+}
+
+.pricingOptionDeal {
+  grid-column: 4 / 6;
+  grid-row: 4 / 5;
 }
