@@ -1,116 +1,139 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="shorcut icon" href="./images/favicon.ico" />
+    <title>Product Landing Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="./main.css">
-  <link rel="shorcut icon" href="./images/favicon.ico">
-  <title>Product Landing Page</title>
-</head>
-
-<body>
-  <header id="header">
-    <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo">
-    <nav id="nav-bar">
+  <body>
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+        alt="original trombones logo"
+      />
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="nav-link">How it works</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="form-div">
+        <p>Handcrafted, home-made masterpieces</p>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input type="submit" id="submit" value="Get started" />
+        </form>
+      </div>
+      <div id="features">
+        <div class="nav-bar-offset"></div>
+        <div class="feature">
+          <i class="fab fa-gripfire fa-4x"></i>
+          <div>
+            <p class="feature-header">Premium Materials</p>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <i class="fas fa-truck fa-3x"></i>
+          <div>
+            <p class="feature-header">Fast Shipping</p>
+            <p>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <i class="fas fa-battery-full fa-3x"></i>
+          <div>
+            <p class="feature-header">Quality Assurance</p>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="how-it-works">
+        <div class="nav-bar-offset"></div>
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div id="pricing">
+        <div class="nav-bar-offset-pricing"></div>
+        <div class="option">
+          <p class="option-header">Tenor Trombone</p>
+          <p class="option-price">$600</p>
+          <ul class="option-text">
+            <li>The simplest</li>
+            <li>Longer horn</li>
+            <li>Extra tubing within the main loop</li>
+            <li>Tubing is activated with a trigger</li>
+          </ul>
+          <button>Select</button>
+        </div>
+        <div class="option">
+          <p class="option-header">Bass Trombone</p>
+          <p class="option-price">$900</p>
+          <ul class="option-text">
+            <li>Larger bell</li>
+            <li>Same length as the Tenor trombone</li>
+            <li>Adds a second rotor to extend its low</li>
+            <li>Larger version of the F-rotor trombone</li>
+          </ul>
+          <button>Select</button>
+        </div>
+        <div class="option">
+          <p class="option-header">Valve Trombone</p>
+          <p class="option-price">$1200</p>
+          <ul class="option-text">
+            <li>Comes in many sizes</li>
+            <li>Great for Jazz Bands</li>
+            <li>Plays similar to a Trumpet</li>
+            <li>The valves allow it to play fast tempos</li>
+          </ul>
+          <button>Select</button>
+        </div>
+      </div>
+    </div>
+    <footer>
       <ul>
-        <li><a href="#features" class="nav-link">Features</a></li>
-        <li><a href="#how-it-works" class="nav-link">How it works</a></li>
-        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#" class="footer-link">Privacy</a></li>
+        <li><a href="#" class="footer-link">Terms</a></li>
+        <li><a href="#" class="footer-link">Contact</a></li>
       </ul>
-    </nav>
-  </header>
-  <div class="container">
-    <div class="form-div">
-      <p>Handcrafted, home-made masterpieces</p>
-      <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <input type="email" name="email" id="email" placeholder="Enter your email address" required>
-        <input type="submit" id="submit" value="Get started">
-      </form>
-    </div>
-    <div id="features">
-      <div class="nav-bar-offset"></div>
-      <div class="feature">
-        <i class="fab fa-gripfire fa-4x"></i>
-        <div>
-          <p class="feature-header">Premium Materials</p>
-          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the
-            longevity of your
-            purchase.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <i class="fas fa-truck fa-3x"></i>
-        <div>
-          <p class="feature-header">Fast Shipping</p>
-          <p>We make sure you recieve your trombone as soon as we have finished making it. We also
-            provide free
-            returns if you are not satisfied.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <i class="fas fa-battery-full fa-3x"></i>
-        <div>
-          <p class="feature-header">Quality Assurance</p>
-          <p>For every purchase you make, we will ensure there are no damages or faults and we will
-            check and test the
-            pitch of your instrument.</p>
-        </div>
-      </div>
-    </div>
-    <div id="how-it-works">
-      <div class="nav-bar-offset"></div>
-      <iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
-    </div>
-    <div id="pricing">
-      <div class="nav-bar-offset-pricing"></div>
-      <div class="option">
-        <p class="option-header">Tenor Trombone</p>
-        <p class="option-price">$600</p>
-        <ul class="option-text">
-          <li>The simplest</li>
-          <li>Longer horn</li>
-          <li>Extra tubing within the main loop</li>
-          <li>Tubing is activated with a trigger</li>
-        </ul>
-        <button>Select</button>
-      </div>
-      <div class="option">
-        <p class="option-header">Bass Trombone</p>
-        <p class="option-price">$900</p>
-        <ul class="option-text">
-          <li>Larger bell</li>
-          <li>Same length as the Tenor trombone</li>
-          <li>Adds a second rotor to extend its low</li>
-          <li>Larger version of the F-rotor trombone</li>
-        </ul>
-        <button>Select</button>
-      </div>
-      <div class="option">
-        <p class="option-header">Valve Trombone</p>
-        <p class="option-price">$1200</p>
-        <ul class="option-text">
-          <li>Comes in many sizes</li>
-          <li>Great for Jazz Bands</li>
-          <li>Plays similar to a Trumpet</li>
-          <li>The valves allow it to play fast tempos</li>
-        </ul>
-        <button>Select</button>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <ul>
-      <li><a href="#" class="footer-link">Privacy</a></li>
-      <li><a href="#" class="footer-link">Terms</a></li>
-      <li><a href="#" class="footer-link">Contact</a></li>
-    </ul>
-    <p>Copyright 2019, Original Trombones</p>
-  </footer>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
-
+      <p>Copyright 2019, Original Trombones</p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
